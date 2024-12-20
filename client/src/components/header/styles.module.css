@@ -1,0 +1,75 @@
+/* General styles for the header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between title and navigation links */
+    align-items: center; /* Center items vertically */
+    padding: 15px 30px; /* Add padding around the header */
+    background-color: #0078d7; /* Modern blue color for the background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it appears above content */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  /* Styling for the title (Mern Blog App) */
+  .header h3 {
+    font-size: 26px; /* Size for the title */
+    font-weight: bold;
+    color: #fff; /* White color for contrast */
+    margin: 0; /* Remove default margin */
+    font-family: "Poppins", sans-serif; /* Modern font for a polished look */
+    cursor: pointer;
+  }
+  
+  /* Navigation container */
+  .header ul {
+    display: flex;
+    list-style: none; /* Remove bullet points */
+    gap: 25px; /* Space between links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Individual navigation links */
+  .header ul li {
+    font-size: 18px; /* Font size for links */
+    font-weight: 500;
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s ease; /* Smooth hover transition */
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded edges for links */
+  }
+  
+  /* Hover effect for navigation links */
+  .header ul li:hover {
+    background-color: #005bb5; /* Slightly darker blue on hover */
+    color: #fff; /* Keep the text white */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .header {
+      flex-wrap: wrap; /* Allow the content to wrap */
+      padding: 10px 20px;
+    }
+  
+    .header h3 {
+      font-size: 22px; /* Slightly smaller title for smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .header ul {
+      justify-content: flex-end;
+      gap: 15px; /* Reduce spacing for smaller screens */
+    }
+  
+    .header ul li {
+      font-size: 16px; /* Smaller font for navigation links */
+      padding: 8px 12px; /* Reduce padding for links */
+    }
+  }
+  

@@ -1,0 +1,67 @@
+.wrapper {
+    padding: 30px;
+    background-color: #121212; /* Dark background for dark mode */
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* White text for contrast */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .blogList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .blogList div {
+    padding: 15px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 10px;
+    background-color: #1e1e1e; /* Dark gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Consistent width for blog cards */
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+  
+  .blogList div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .blogList div p.title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .blogList div p.description {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    margin: 10px 0;
+    overflow: hidden; /* Hides overflowing text */
+    display: -webkit-box; /* Ensures truncation works */
+    -webkit-line-clamp: 3; /* Limits to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .blogList div .see-more {
+    color: #1e90ff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 5px;
+    transition: color 0.2s;
+  }
+  
+  .blogList div .see-more:hover {
+    color: #4682b4;
+  }
+  
